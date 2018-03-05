@@ -5,7 +5,6 @@ from __future__ import unicode_literals
 from django.db import models
 
 # Create your models here.
-
 class Departamentos(models.Model):
 	Abr = models.CharField(max_length=4)
 	Nombre = models.CharField(max_length=30)
@@ -91,15 +90,27 @@ class Alumnos(models.Model):
 		verbose_name_plural="Alumnos"
 
 
+<<<<<<< HEAD
 
 class Modulos(models.Model):
      Abr = models.CharField(max_length=4)
      Nombre = models.CharField(max_length=50)
      Unidad = models.ForeignKey(Cursos,blank=True,null=True,on_delete=models.SET_NULL)
      
+=======
+class Modulos(models.Model):    
+     Abr = models.CharField(max_length=4)
+     Nombre = models.CharField(max_length=50)
+     Unidad = models.ForeignKey(Cursos,blank=True,null=True,on_delete=models.SET_NULL)
+
+>>>>>>> 21d2133523f10106670dd8c247d92d9339ee1b8b
      def __unicode__(self):
          return self.Abr+" - "+self.Nombre       
 
      class Meta:
          verbose_name="Modulo"
          verbose_name_plural="Modulos"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 21d2133523f10106670dd8c247d92d9339ee1b8b

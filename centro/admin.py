@@ -4,6 +4,7 @@ from django import forms
 from django.db import models
 from centro.models import Cursos,Alumnos,Departamentos,Profesores,Areas,Modulos
 from django.contrib.admin.widgets import FilteredSelectMultiple
+
 # Register your models here.
 class AlumnosAdmin(admin.ModelAdmin):
     #date_hierarchy = 'Fecha_nacimiento'
